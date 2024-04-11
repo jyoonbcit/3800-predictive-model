@@ -5,6 +5,7 @@ from api.api_v1.api import router as api_router
 
 app = FastAPI()
 
+# Should be adjusted to the live site for eventual deployment.
 origins = [
     "*"
 ]

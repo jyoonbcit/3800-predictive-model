@@ -6,8 +6,6 @@ from pycaret.regression import predict_model, load_model
 model = load_model('squamish-pipeline')
 
 def setup_data(input_data):
-    # Convert all data types to native Python types
-    # input_data = {key: [value] for key, value in input_data.items()}
     data = pd.DataFrame(input_data, index=[0])
 
     # Convert all columns to native Python types
@@ -23,7 +21,6 @@ Make a prediction with the model.
 def use_model(input_data):
     data = setup_data(input_data)
     predictions = predict_model(model, data)
-    # Change predictions from numpy array to list
     json_data = predictions.to_json(orient='index')
     json_data = json.loads(json_data)
     return json_data
