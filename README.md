@@ -6,6 +6,6 @@
 
 ## FAQ
 
-### What are the __init__.py files?
+### What are the \_\_init\_\_.py files?
 
-The \___init__.py files tell us that the folder is a module that can be imported.
+The \_\_init\_\_.py files tell us that the folder is a module that can be imported.
